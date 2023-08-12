@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+  backend:
+    container_name: backend
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile.backend
+    depends_on:
+      - mongodb
+    ports:
+      - "8080:8080" 
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile.frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
