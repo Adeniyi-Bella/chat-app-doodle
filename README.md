@@ -21,13 +21,13 @@ The API should have the following features
 ### Testing/Run
 - To run the app for testing purposes:
 - Download docker ([Download here](https://www.docker.com/products/docker-desktop/)) if not already downloaded.
-```bash
+
 1. clone the repo ```git clone https://github.com/Adeniyi-Bella/chat-app-doodle.git```
 2. change directory into cloned repo ```cd chat-app-doodle```
 3. run ```docker-compose build``` to build images for all the services (frontend, backend, database).
 4. run ```docker-compose up``` to start all the services.
 5. The frontend is available on localhost:3000. You can start testing
-```
+
 
 ## Folder Structure
 
