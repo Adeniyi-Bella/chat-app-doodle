@@ -19,11 +19,13 @@ The API should have the following features
 - Styling was with CSS
 
 ### Testing/Run
-- To run the app for testing purpose:
-1. Dowload docker ([Download here](https://www.docker.com/products/docker-desktop/)) if not already downloaded.
-2. run <docker-compose build> to build images for all the services (frontend, backend, database).
-3. run <docker-compose up> to start all the services.
-4. The frontend is available on localhost:3000. You can start testing
+- To run the app for testing purposes:
+- Download docker ([Download here](https://www.docker.com/products/docker-desktop/)) if not already downloaded.
+```bash
+1. run <docker-compose build> to build images for all the services (frontend, backend, database).
+2. run <docker-compose up> to start all the services.
+3. The frontend is available on localhost:3000. You can start testing
+```
 
 ## Folder Structure
 
