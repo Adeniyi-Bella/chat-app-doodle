@@ -1,21 +1,21 @@
-// api.js
-
+import { UserEntry } from '../types/types';
 const API_BASE_URL = 'http://localhost:8080'; // Update with your backend URL
 
-export async function getAllUsers() {
+// In getAllUsers function:
+export async function getAllUsers(): Promise<UserEntry[]> {
   try {
     const response = await fetch(`${API_BASE_URL}/getUsers`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return await response.json();
+    return await response.json() as UserEntry[];
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error;
   }
 }
 
-export const addMessageToDb = async (user, message) => {
+export const addMessageToDb = async (user:string, message:string) => {
   try {
     const response = await fetch(`${API_BASE_URL}/addMessage`, {
       method: "POST",
@@ -32,8 +32,6 @@ export const addMessageToDb = async (user, message) => {
       throw new Error("Failed to send message.");
     }
 
-    // const data = await response.json();
-    // return data;
   } catch (error) {
     throw new Error("Failed to send keywords.");
   }
