@@ -35,15 +35,16 @@ The API should have the following features
 frontend/
   ├── public/
   ├── src/
-  │   ├── components/
-  │   ├── api
-          ├── BackendService.js
-  │   ├── App.jsx (All the FE logic is located inside here)
+  │   ├── types/
+          ├── types.ts
+  │   ├── api/
+          ├── BackendService.ts
+  │   ├── App.tsx (All the FE logic is located inside here)
   │   ├── index.jsx
   │   ├── index.css
   ├── package.json
   ├── Dockerfile.frontend
-  └── ...
+  └── tsconfig.json
 backend/
   ├── .mvn/wrapper
   ├── src/
