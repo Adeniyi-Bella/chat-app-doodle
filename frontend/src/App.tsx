@@ -187,7 +187,7 @@ function App() {
                 </form>
               </div>
               <button type="button" onClick={handleGoBack}>
-                Go Back
+                Sign Out
               </button>
             </div>
           </>

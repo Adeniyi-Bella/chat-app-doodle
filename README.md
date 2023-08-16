@@ -26,7 +26,8 @@ The API should have the following features
 2. change directory into cloned repo ```cd chat-app-doodle```
 3. run ```docker-compose build``` to build images for all the services (frontend, backend, database).
 4. run ```docker-compose up``` to start all the services.
-5. The frontend is available on localhost:3000. You can start testing
+5. The frontend is available on localhost:3000. You can start testing.
+6. Test with multiple users by using the Sign-in and Sign-out Buttons.
 
 
 ## Folder Structure
